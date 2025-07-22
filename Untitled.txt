@@ -1,0 +1,34 @@
+#bmi calculator
+weight=float(input("Enter the weight in kgs: "))
+height=float(input("Enter the height in cms: "))
+
+height_in_cms=height/100
+bmi=weight/(height_in_cms**2)
+print("Your bmi is:", bmi)
+ 
+if bmi<18.5:
+     print("Category: Underweight")
+elif bmi<25:
+     print("Category:Normalweight")
+elif bmi<30:
+     print("Category:Overweight")
+else:
+     print("Category:Obese")
+     # Improved version of bmi calculator
+    
+weight=float(input("weight in kg: "))
+height=float(input("height in cm: "))
+
+height_in_cms=height/100
+bmi=weight/(height_in_cms**2)
+print("You're bmi is: ")
+ 
+if bmi<18.5:
+     print("Category:Underweight \n recommended to consult a physician to put on some weight")
+elif bmi<25:
+     print("Category:Normalweight \n 'You're in a good shape'")
+elif bmi<30:
+     print("Category:Overweight \n 'You're recommended to a gym for put down some weight by a physical activity")
+else:
+     print("Category:Obese \n You're recommended to put on a diet to be in a good shape and also to cut down the junk intake")
+ 
